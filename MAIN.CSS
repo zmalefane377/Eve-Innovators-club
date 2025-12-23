@@ -1,0 +1,161 @@
+/* =========================================================
+   MAIN.CSS — Brand Color & UI Protocol
+   ========================================================= */
+
+/* =========================
+   Root Variables (Colors)
+   ========================= */
+:root {
+  /* Primary Colors */
+  --royal-blue: #002366;
+  --gold: #FFD700;
+
+  /* Supporting Accents */
+  --ivory: #FAF8F1;
+  --charcoal: #2E2E2E;
+  --blush-pink: #F2D5D5;
+
+  /* Neutrals */
+  --light-gray: #E5E5E5;
+  --off-white: #F9F9F9;
+}
+
+/* =========================
+   Global Reset & Base Styles
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: var(--off-white);
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+/* =========================
+   Typography
+   ========================= */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--royal-blue);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--royal-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Layout & Sections
+   ========================= */
+section {
+  padding: 2.5rem 1.5rem;
+  background-color: var(--off-white);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.section-light {
+  background-color: var(--ivory);
+}
+
+.section-dark {
+  background-color: var(--royal-blue);
+  color: #ffffff;
+}
+
+/* =========================
+   Buttons & CTAs
+   ========================= */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--gold);
+  color: var(--royal-blue);
+}
+
+.btn-primary:hover {
+  background-color: #e6c200;
+}
+
+.btn-secondary {
+  background-color: var(--royal-blue);
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   Cards & Content Blocks
+   ========================= */
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--light-gray);
+}
+
+.card-accent {
+  border-left: 6px solid var(--gold);
+  background-color: var(--ivory);
+}
+
+/* =========================
+   Text Utilities
+   ========================= */
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: #6f6f6f;
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.text-blue {
+  color: var(--royal-blue);
+}
+
+/* =========================
+   Optional Creative Accent
+   ========================= */
+.accent-blush {
+  background-color: var(--blush-pink);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  background-color: var(--royal-blue);
+  color: #ffffff;
+  padding: 1.5rem;
+  text-align: center;
+}
