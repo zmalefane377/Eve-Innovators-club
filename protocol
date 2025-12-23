@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color Palette Protocol</title>
+
+  <style>
+    /* =========================
+       Color Variables (Protocol)
+       ========================= */
+    :root {
+      /* Primary Colors */
+      --royal-blue: #002366;
+      --gold: #FFD700;
+
+      /* Supporting Accents */
+      --ivory: #FAF8F1;
+      --charcoal: #2E2E2E;
+      --blush-pink: #F2D5D5;
+
+      /* Neutral Colors */
+      --light-gray: #E5E5E5;
+      --off-white: #F9F9F9;
+    }
+
+    /* =========================
+       Global Styles
+       ========================= */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--off-white);
+      color: var(--charcoal);
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      padding: 2rem;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    h1, h2, h3 {
+      color: var(--royal-blue);
+      margin-bottom: 1rem;
+    }
+
+    /* =========================
+       UI Elements
+       ========================= */
+    .cta-button {
+      background-color: var(--gold);
+      color: var(--royal-blue);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .accent-box {
+      background-color: var(--ivory);
+      padding: 1.5rem;
+      border-left: 6px solid var(--gold);
+    }
+
+    .optional-accent {
+      background-color: var(--blush-pink);
+      padding: 1rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header / Banner -->
+  <section>
+    <h1>Brand Color Palette</h1>
+    <p>This protocol defines the official color usage for consistency and visual identity.</p>
+  </section>
+
+  <!-- Primary Colors -->
+  <section>
+    <h2>Primary Colors</h2>
+    <ul>
+      <li><strong>Royal Blue</strong> (#002366): Headers, banners, call-to-action sections</li>
+      <li><strong>Gold</strong> (#FFD700): Buttons, icons, borders, logo highlights</li>
+    </ul>
+    <button class="cta-button">Call to Action</button>
+  </section>
+
+  <!-- Supporting Accents -->
+  <section class="accent-box">
+    <h2>Supporting Accents</h2>
+    <ul>
+      <li><strong>Ivory/Cream</strong> (#FAF8F1): Soft background for elegance</li>
+      <li><strong>Charcoal</strong> (#2E2E2E): Primary text color</li>
+      <li><strong>Blush Pink</strong> (#F2D5D5): Optional creative accent</li>
+    </ul>
+  </section>
+
+  <!-- Optional Creative Accent -->
+  <section class="optional-accent">
+    <h3>Creative Highlight</h3>
+    <p>Use blush pink sparingly to introduce warmth and modern creativity.</p>
+  </section>
+
+</body>
+</html>
